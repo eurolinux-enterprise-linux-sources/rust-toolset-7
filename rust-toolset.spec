@@ -9,12 +9,12 @@
 
 Summary:        Package that installs %scl
 Name:           %scl_name
-Version:        1.25.0
+Version:        1.26.2
 Release:        1%{?dist}
 License:        ASL 2.0 or MIT
 
-Requires:       %{scl_prefix}rust = 1.25.0
-Requires:       %{scl_prefix}cargo = 0.26.0
+Requires:       %{scl_prefix}rust = 1.26.2
+Requires:       %{scl_prefix}cargo = 1.26.0
 
 BuildRequires:  scl-utils-build
 
@@ -68,6 +68,15 @@ EOF
 %{_root_sysconfdir}/rpm/macros.%{scl}-config
 
 %changelog
+* Mon Jun 04 2018 Josh Stone <jistone@redhat.com> - 1.26.2-1
+- Update to Rust 1.26.2
+
+* Thu May 31 2018 Josh Stone <jistone@redhat.com> - 1.26.1-1
+- Update to Rust 1.26.1
+
+* Tue May 22 2018 Josh Stone <jistone@redhat.com> - 1.26.0-1
+- Update to Rust and Cargo 1.26.0
+
 * Tue Apr 03 2018 Josh Stone <jistone@redhat.com> - 1.25.0-1
 - Update to rust-1.25.0 and cargo-0.26.0
 
